@@ -1,0 +1,129 @@
+/* ====== General Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+/* ====== Container ====== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ====== Header ====== */
+header {
+  background: #1877f2;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0 0 15px 15px;
+}
+
+header .logo a {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: yellow;
+}
+
+/* ====== Main Section ====== */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.detail h1 span {
+  color: #1877f2;
+}
+
+.detail button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.detail button:hover {
+  background: #145dbf;
+}
+
+/* ====== Sections ====== */
+section h2 {
+  margin-bottom: 15px;
+  color: #1877f2;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  background: #eaeaea;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* ====== Projects ====== */
+.project {
+  background: #eaeaea;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #1877f2;
+  border-radius: 5px;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background: #1877f2;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 15px 15px 0 0;
+}
